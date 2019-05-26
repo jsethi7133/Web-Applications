@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Fibonacci Series</title>
+        <script>
+            function fib()
+            {
+              var fib0=0,fib1=1,n,sum=0,i;
+                n=document.form4.num.value;
+                if(n!=null && n>0)
+                {
+                    document.write('<h2>'+"Fibonacci series:"+'<br>'+'</h2>');
+                    if(n ==1)
+                      document.write(fib0);
+                    else 
+                      document.write('<h2>'+fib0+'<br>'+fib1+'<br>'+'<h2>');
+                      for(i=3;i<=n;i++)
+                      {
+                        sum=fib0+fib1;
+                        document.write('<h2>'+sum+'</h2>')
+                        fib0=fib1;
+                        fib1=sum;
+                     } 
+                    }
+                else
+                   alert("No proper input");     
+            }
+        </script>
+    </head>
+    <body>
+        <form name="form4">
+            Enter a number:<input type="text" name="num">
+            <input type="button" value="Check" onClick="fib()">
+        </form>
+    </body>
+</html>

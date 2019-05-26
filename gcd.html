@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>GCD</title>
+        <script>
+            function gcd()
+            {
+                var x1=document.form5.n1.value;
+                var x2=document.form5.n2.value;
+                while(x1!=x2)
+                    {
+                    if(x1>x2)
+                      x1=x1-x2;
+                    else
+                      x2=x2-x1;
+                    }
+                document.form5.result.value=x1;
+                
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <form name="form5">
+        <fieldset>
+            <legend>GCD</legend>
+            Enter number 1:<input type="text" name="n1"><br><br>
+            Enter number 2:<input type="text" name="n2"><br><br>
+            <input type="button" value="GCD" onClick=gcd()>
+            Result:<input type="text" name="result">
+                </fieldset>
+            </form>
+        </center>
+    </body>
+</html>
+    

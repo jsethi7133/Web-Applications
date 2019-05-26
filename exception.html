@@ -1,0 +1,24 @@
+<html>
+    <body>
+    <script>
+        var n;
+        n=prompt("Enter a value between 0 to 10:");
+        try
+        {
+            if(n<0)
+             throw "err1"
+            else if(n>10)
+                throw "err2"
+                
+        }
+        catch(err)
+            {
+                if(err=="err1")
+                    alert("Value is too low!!");
+               else if(err=="err2")
+                    alert("Value is too high!!");
+                    
+            }
+    </script>
+    </body>
+</html>
