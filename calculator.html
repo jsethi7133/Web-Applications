@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <script>
+            function add()
+            {
+                document.form2.result.value=parseFloat(document.form2.n1.value)+parseFloat(document.form2.n2.value);
+            }
+             function sub()
+            {
+                document.form2.result.value=parseFloat(document.form2.n1.value)-parseFloat(document.form2.n2.value);
+            }
+             function mul()
+            {
+                document.form2.result.value=parseFloat(document.form2.n1.value)*parseFloat(document.form2.n2.value);
+            }
+             function div()
+            {
+                document.form2.result.value=parseFloat(document.form2.n1.value)/parseFloat(document.form2.n2.value);
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <form name="form2">
+        <fieldset>
+            <legend>Calculator</legend>
+            Enter number 1:<input type="text" name="n1"><br><br>
+            Enter number 2:<input type="text" name="n2"><br><br>
+            <input type="button" value="Add" onClick=add()>
+            <input type="button" value="Subtract" onClick=sub()>
+            <input type="button" value="Multiply" onClick=mul()>
+            <input type="button" value="Divide" onClick=div()><br><br>
+            Result:<input type="text" name="result">
+                </fieldset>
+            </form>
+        </center>
+    </body>
+</html>
+    
